@@ -1,0 +1,93 @@
+const productList = [
+    {name: "F Series",
+     children:[
+     {cName:"FIL"},
+     {cName:"FIS"},
+     {cName:"FID"},
+     {cName:"FIC"},
+     {cName:"FSS"},
+     ]},
+     {name: "UI Series",
+     children:[
+     {cName:"UIS"},
+     {cName:"UIL"},
+     ]},
+     {name: "UT Series",
+     children:[
+     {cName:"UTE"},
+     {cName:"UTC"},
+     {cName:"UTS"},
+     {cName:"UTT"},
+     ]},
+     {name: "REC Series",
+     children:[
+     {cName:"REC-BCS"},
+     {cName:"REC-BHS"},
+     {cName:"REC-WCS"},
+     {cName:"RET-BCS"},
+     ]},
+     {name: "ST Series",
+     children:[
+     {cName:"STS"},
+     {cName:"STD"},
+     ]},
+     {name: "DB Series",
+     children:[
+     {cName:"DBL"},
+     {cName:"DBU"},
+     ]},
+     {name: "TSO Series",
+     children:[
+     {cName:"TSO-BTS"},
+     {cName:"TSO-BTL"},
+     {cName:"TSO-PTS"},
+     ]},
+     {name: "GB Series",
+     children:[
+     {cName:"GB-TS"},
+     ]},
+     {name: "ALT Series",
+     children:[
+     {cName:"ALT-BCS"},
+     ]},
+     {name: "TDB Series",
+     children:[
+     {cName:"TDB-TC"},
+     ]},
+     {name: "LJB Series",
+     children:[
+     {cName:"LJB-BCL"},
+     {cName:"LJB-BHL"},
+     {cName:"LJB-BCL"},
+     {cName:"LJB-PCL"},
+     ]},
+     {name: "Alloy Trailers",
+     children:[
+     {cName:"WT-1"},
+     {cName:"WT-2"},
+     {cName:"WT-3"},
+     {cName:"WT-4E"},
+     {cName:"WT-5"},
+     {cName:"WT-UTE-D"},
+     {cName:"WT-UTE"},
+     ]},
+     {name: "Alloy Trailer Covers",
+     children:[
+     {cName:"TC-1"},
+     {cName:"TC-2"},
+     {cName:"TC-3"},
+     {cName:"TC-4"},
+     {cName:"TC-5"},
+     {cName:"TC-6"},
+     ]},
+     {name: "Alloy Trailer Covers",
+     children:[
+     {cName:"TC-1"},
+     {cName:"TC-2"},
+     {cName:"TC-3"},
+     {cName:"TC-4"},
+     {cName:"TC-5"},
+     {cName:"TC-6"},
+     ]},
+
+]
