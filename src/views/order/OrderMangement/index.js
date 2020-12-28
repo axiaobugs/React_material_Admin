@@ -271,7 +271,6 @@ const OrderManagement = ()=>{
                 xs={12}
               >
                 <TextField
-                  fullWidth
                   label="产品型号"
                   name="category"
                   variant="outlined"
@@ -281,6 +280,21 @@ const OrderManagement = ()=>{
                 >
                   
                 </TextField>
+              </Grid>
+              <Grid item md={6} xs={12}>
+                <FormControl required className={classes.margin} variant="outlined">
+                  <InputLabel htmlFor="outlined-adornment-amount">售价</InputLabel>
+                  <OutlinedInput
+                    id="outlined-adornment-amount"
+                    startAdornment={<InputAdornment position="start">$</InputAdornment>}
+                    labelWidth={60}
+                    name="price"
+                    value={formik.values.price}
+                    onChange={formik.handleChange}
+                  />
+                
+                </FormControl>  
+                
               </Grid>
               <Grid item md={6} xs={12}>
               
@@ -361,21 +375,7 @@ const OrderManagement = ()=>{
                   onChange={formik.handleChange}  
                 />
               </Grid>
-              <Grid item md={6} xs={12}>
-                <FormControl required className={classes.margin} variant="outlined">
-                  <InputLabel htmlFor="outlined-adornment-amount">售价</InputLabel>
-                  <OutlinedInput
-                    id="outlined-adornment-amount"
-                    startAdornment={<InputAdornment position="start">$</InputAdornment>}
-                    labelWidth={60}
-                    name="price"
-                    value={formik.values.price}
-                    onChange={formik.handleChange}
-                  />
-                
-                </FormControl>  
-                
-              </Grid>
+              
               <Grid item md={6} xs={12}>              
                   <FileUploader getUploadeList={getUploadeList} orderDetail={orderDetail}/>
               </Grid>

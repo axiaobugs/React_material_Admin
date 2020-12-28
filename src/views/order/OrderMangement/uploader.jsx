@@ -1,6 +1,4 @@
-import { colors } from '@material-ui/core';
 import React from 'react'
-import { forwardRef} from 'react';
 import { Uploader,Icon,Alert,Button} from 'rsuite';
 
 
@@ -43,6 +41,7 @@ const FileUploader = ((props)=>{
     <div>
         <Uploader 
         draggable
+        multiple
         listType='text-picture'
         action="/manage/img/upload"
         accept='image/*,.pdf'
@@ -51,9 +50,7 @@ const FileUploader = ((props)=>{
         onSuccess={handleSuccess}
         onRemove={handleRemove}
         >
-            <button>
-                <Icon icon='camera-retro' size="lg" />
-            </button>
+        <div style={{lineHeight: '200px'}}>点击或拖拽文件到此区域上传</div>
         </Uploader>
         <Button 
         onClick={()=>getUploadeList(uploadList)} 

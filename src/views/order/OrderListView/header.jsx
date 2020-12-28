@@ -24,6 +24,7 @@ const Header = () => {
       <IconButton color="primary" aria-label="add to shopping cart">
         <SearchIcon />
       </IconButton>
+      
     </div>
   )
     

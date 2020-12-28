@@ -24,6 +24,7 @@ import {
   UserPlus as UserPlusIcon,
   Users as UsersIcon
 } from 'react-feather';
+
 import NavItem from './NavItem';
 import { ExpandLess, ExpandMore } from '@material-ui/icons'
 

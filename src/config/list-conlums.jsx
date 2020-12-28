@@ -10,7 +10,7 @@ export  const columns = [
     },
     {
       id: 'editor',
-      label: '编辑',
+      label: '操作',
       minWidth: 170,
       align: 'center',
       format: (value) => value.toFixed(2),

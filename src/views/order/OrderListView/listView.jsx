@@ -14,6 +14,7 @@ import TablePagination from '@material-ui/core/TablePagination'
 import TableRow from '@material-ui/core/TableRow'
 import DeleteIcon from '@material-ui/icons/Delete'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
+import DoneIcon from '@material-ui/icons/Done';
 import {useNavigate} from 'react-router-dom'
 
 import {reqOrders} from '../../api/index'
@@ -73,7 +74,8 @@ const ListView = () => {
     const handleChangePage = (event, newPage) => {
       setPage(newPage)
     }
-    
+    //TODO: 增加完成和删除的功能
+    //order=areaId,orderNum  obj=file
     function createData(order, deadDate, status,obj ) {
     
         const editor = [(<IconButton 
@@ -84,7 +86,17 @@ const ListView = () => {
              
         }}>
         <MoreHorizIcon />
-        </IconButton>),(<IconButton aria-label="delete" color="secondary">
+        
+        </IconButton>),
+        (<IconButton 
+        aria-label="delete" 
+        color="secondary"
+        onClick={()=>{
+
+        }}>
+        <DoneIcon />
+        </IconButton>),
+        (<IconButton aria-label="delete" color="secondary">
         <DeleteIcon />
         </IconButton>)]
         

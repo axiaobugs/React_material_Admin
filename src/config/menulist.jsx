@@ -9,7 +9,6 @@ import {
     Users as UsersIcon
   } from 'react-feather';
 
-
 //TODO: 增加name属性 用来navbar中的classname用来控制二级折叠菜单的状态
 const items = [
     {
@@ -35,7 +34,7 @@ const items = [
         href: '/app/ordermanagement',
         icon: UsersIcon,
         title: '订单管理',
-      }]
+      },]
     },
     {
       href: '/app/account',
