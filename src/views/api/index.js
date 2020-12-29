@@ -18,7 +18,10 @@ export const reqAddCategories = (categoryName, parentId) =>ajax(BASE+'/manage/ca
 export const reqUpdateCategories = ({categoryId, categoryName}) =>ajax(BASE+'/manage/category/update', {categoryId, categoryName},'POST')
 
 //获取订单分页列表
-export const reqOrders = (pageNum, pageSize)=>ajax(BASE+'/manage/order/list', {pageNum, pageSize})
+export const reqOrders = (pageNum, pageSize,index)=>ajax(BASE+'/manage/order/list', {pageNum, pageSize,index})
+
+//订单设置状态(done===0 delete===1)
+export const reqOrderDoneDelete = (status,areaId,orderNum)=>ajax(BASE+'/manage/order/set', {status,areaId,orderNum})
 
 //删除图片
 export const reqDeleteImg = (name)=>ajax(BASE+'/manage/img/delete',{name},'POST')

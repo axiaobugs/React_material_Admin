@@ -8,6 +8,7 @@ import {Container,
 
 import Header from './header.jsx'
 import ListView from './listView'
+import ListTab from './listTab'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -28,7 +29,7 @@ const OrderList = () => {
       </Paper>
       <Divider/>
       <Paper>
-        <ListView/>
+        <ListTab/>
       </Paper>
 
       
